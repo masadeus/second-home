@@ -3,8 +3,8 @@
     /**
      * constants.php
      *
-	 * Second Home
-	 *
+     * Second Home
+     *
      * Global constants.
      */
 
