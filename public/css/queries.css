@@ -1,0 +1,174 @@
+/* 4K and bigger */
+
+@media only screen and min-width: 3001px) {
+    .header h1 {
+        font-size: 900%;
+    }
+    .btn-sub {
+        margin-top: 3em;
+    }
+    .chevron {
+        margin-top: 190px;
+    }
+}
+
+/* regular screens */
+
+@media only screen and (max-width: 3000px) and (min-height: 840px) {
+    .header h1 {
+        font-size: 750%;
+        margin-top: .8em;
+    }
+    .chevron {
+        margin-top: 30px;
+    }
+    .section-register {
+        min-height: 629px;
+    }
+}
+
+/* regular screens shorter height */
+
+@media only screen and (max-width: 3000px) and (max-height: 840px) {
+    .header h1 {
+        font-size: 550%;
+    }
+    body {
+        font-size: 19px;
+    }
+    .btn-sub,
+    .extra {
+        margin-top: .5em;
+    }
+    
+    .extra {
+        margin-top: .5em;
+    }
+    
+    .chevron {
+        margin-top: 30px;
+    }
+    .section-register {
+        min-height: 629px;
+    }
+}
+
+/* small screens */
+
+@media only screen and (max-width: 1450px) {
+    .section-features {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* Big tablet to 1200px (our col width was 1140px) */
+
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablets: 768px(iPad) to 1023px(1024 is iPad in landscape) */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    .header h1 {
+        font-size: 700%;
+        margin-top: 1em;
+    }
+    .container {
+        /* center contents */
+        
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        padding: 40px 0;
+    }
+    .section-features {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Small phones to small tablets 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        /* center contents */
+        
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+        padding: 40px 0;
+    }
+    .header h1 {
+        font-size: 700%;
+    }
+}
+
+/* Nexus4 */
+
+@media only screen and (max-width: 570px) {
+    body {
+        font-size: 16px;
+    }
+    .header h1 {
+        font-size: 600%;
+    }
+    .col {
+        width: 100%;
+        margin: 0;
+    }
+}
+/* Small phones from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 450%;
+        margin-top: 0em;
+    }
+    .section-features {
+        background-color: #fffbf3;
+        padding: 30px 20px 30px 22px;
+    }
+    .section-features h2 {
+        padding: 0 40px;
+    }
+    .section-features h3 {
+        padding: 1em 0px 0 0;
+    }
+    .section-register {
+        padding: 80px 50px;
+        min-height: 400px;
+    }
+    .f_login {
+        padding: 15px 25px;
+    }
+    .chevron {
+        margin-top: 55px;
+    }
+    
+    /* lists */
+    
+    h1 {
+        font-size: 350%;
+        margin-top: 0em;
+    }
+    .trash_category {
+        margin: -30px 8px 0 0;
+    }
+    .trash_item,
+    .edit_item,
+    .save_edited {
+        margin: -34px 11px 0 0;
+    }
+    .edit_item,
+    .save_edited {
+        font-size: 110%;
+        margin: -32px 38px 0 0;
+    }
+}

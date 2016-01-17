@@ -1,0 +1,379 @@
+/**
+ * styles.css
+ *
+ * Second Home.
+ *
+ * Author: Albert Mas.
+ * almaslac@gmail.com
+ *
+ * Global CSS.
+ */
+ 
+/* ----------------------------------------------------------- */
+/* NOTES */
+/* ----------------------------------------------------------- */
+
+/*
+	 
+font-family: 'Montserrat', sans-serif;
+OCHRE COLOR ==> color: #eca359;
+WHITE ON BLACK ==> color: #C2C2C2;
+
+*/
+
+/* ----------------------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------------------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+	background-image: -webkit-linear-gradient(rgba(200, 200, 250, 0.1), rgba(10, 10, 15, 0.6)), url("/public/img/casa_bn1.jpg");
+	background-image: linear-gradient(rgba(200, 200, 250, 0.1), rgba(10, 10, 15, 0.6)), url("/public/img/casa_bn1.jpg");
+		
+	background-size: cover; 
+	background-position: top;
+    background-attachment: fixed; 
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    color: #4b4b4b;
+}
+html {
+  height: 100%
+}
+.menu-elts {
+	background-color: #fff;
+	list-style-type: none;
+	content: left;
+	display: inline;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+#bottom {
+	
+	margin-top: 40px;
+}
+/* ----------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------------------- */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;  
+}
+h1 {
+    padding: .2em 0 .1em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 480%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    opacity: .8;
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 160%;
+    margin-bottom: 1px;
+    margin-top: 35px;
+    color : #fff;
+    background-color: #eca359;
+    font-weight: 400;
+    text-align: center;
+    padding: 1px 0;
+    letter-spacing: 1.5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+/* ----------------------------------------------------------- */
+/* NAVIGATION MENU */
+/* ----------------------------------------------------------- */
+
+.nav_elts li{
+	display: inline-block;
+	margin: 5px 10px;
+	padding: 15px;
+	font-size: 100%;
+	font-family: sans-serif;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 2px;
+	float: right;
+}
+
+.nav_elts li:hover {
+	border-bottom: 3px solid #eca359;;
+	padding-bottom: 10px
+}
+/* ----------------------------------------------------------- */
+/* GENERAL MEU */
+/* ----------------------------------------------------------- */
+
+.container
+	{
+	    /* center contents */
+	    margin-left: auto;
+	    margin-right: auto;
+		width: 500px;
+		padding: 40px 0;
+	}
+
+/*
+	take out the blue rim in chrome's autofocus
+*/
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+.form_items {
+    overflow: hidden; /* to allow clicking trash icons */
+}
+/* ----------------------------------------------------------- */
+/* LISTS */
+/* ----------------------------------------------------------- */
+
+.get_in
+{
+	opacity: 0;
+}
+ul {	
+	list-style-type: none;
+	padding: 0;
+}
+.quantity,
+.item
+ {
+
+	color: #4b4b4b;
+    background-color: #fff;
+    padding: 10px 2%;
+    margin-bottom: 1px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+
+}
+.quantity {
+	float: left;
+	text-align: center;
+    width: 20%;
+    margin-right: 0.3%;
+}   
+.item {	
+	float: right;
+    width: 79.7%; /* quantity width, paddings(x4), margins */  
+     
+}
+.add_field_quantity,
+.add_field_item,
+#add_btn,
+.add_category,
+#add_btn_category {
+	color: #2f2f2f;
+    padding: 5px 2%;
+    text-align: left;
+    background-color: #fcdcbb;
+	border: none;
+	margin-top: 0px;
+}
+.add_field_quantity
+{
+	float: left;
+    width: 20%;
+    margin-right: 0.3%;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.add_field_item
+{
+	float: center;
+	position: absolute;
+    width: 66.7%;
+}
+#add_btn,
+#add_btn_category
+{
+	float: right;
+	width: 13%;
+	text-align: center;
+	background-color: #eca359;
+}
+.add_category
+{
+	float: left;
+    width: 87%;
+	margin-top: 40px;
+}
+#add_btn_category
+{
+	margin-top: 40px;
+}
+.form_items {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	
+}
+/* ----------------------------------------------------------- */
+/* ICONS AND BUTTONS */
+/* ----------------------------------------------------------- */
+
+button{
+	background-color: transparent;
+	text-decoration: none;
+	border: 0;	
+	float: right;
+}
+.trash_item,
+.edit_item,
+.save_edited
+{
+	float: right;
+    width: 22px;
+    font-size: 120%;
+    color: #000;
+    opacity: 0.2;
+    margin: -37px  11px 0 0;
+}
+.trash_category
+{	
+	opacity: .99;
+	float: right;
+	font-size: 120%;
+	color: #fff;
+	margin: -34px 8px 0 0;
+}
+.trash_category:hover {
+	color:#b5b4ad;
+}
+.edit_item,
+.save_edited {
+    font-size: 110%;
+    margin: -34px 44px 0 0;
+}
+.edit_item:hover,
+.save_edited:hover,
+.trash_item:hover {
+	color: #eca359;
+	opacity: 1;
+}
+.q_focus {
+	background-color: #ffe100;
+}
+/* ----------------------------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------------------------- */
+
+.get_in {
+    -webkit-animation: get_in .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+    animation: get_in .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+    position: relative;
+}
+@-webkit-keyframes get_in {
+    from {
+	    opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+	opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+@keyframes get_in {
+    from {
+	    opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+	opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+.get_out {
+	-webkit-animation: get_out .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+	animation: get_out .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+}
+@-webkit-keyframes get_out {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+ 
+    to {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+@keyframes get_out {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+ 
+    to {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* APOLOGY */
+/* ----------------------------------------------------------- */
+
+.apo_wrap {
+
+	display: block;
+	margin-top: 120px;
+	color: #dadada;
+}	
+.text-danger {
+	text-align: center;
+	padding-bottom: 80px;
+	line-height: 3em;
+}
+.lead {
+	font-size: 160%;
+	text-align: center;
+	padding: 80px 0 10px 0;	
+}
+/* ----------------------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------------------- */
+
+#bottom {
+	text-align: center;
+	font-size: 80%;
+    padding: 10px 0 30px  0;
+	letter-spacing: 1px;
+	color: #bababa;
+	letter-spacing: 1px;
+    width: 100%;
+	margin-top: 120px;
+}
