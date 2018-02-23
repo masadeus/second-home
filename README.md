@@ -1,5 +1,5 @@
 # second-home
-List sharing made easy
+<br>List sharing made easy<br>
 
 <i>Second Home</i> is a web app that allows users to create inventories for a shared household, should it be a vacation house, a shared apartment or a tree house. With Second Home roommates, members of a family or any other sharing group can organize item lists in categories and add, edit or remove items, that they collectively use.
 <br>
